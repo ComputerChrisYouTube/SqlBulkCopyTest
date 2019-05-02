@@ -1,13 +1,9 @@
-﻿
-using FastMember;
+﻿using FastMember;
 using LINQtoCSV;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SqlBulkCopyTest
 {
@@ -21,7 +17,7 @@ namespace SqlBulkCopyTest
         private static void RunProcess()
         {
 
-            var csvFile = @"D:\temp\FakeNameGenerator.com_ccc0490e.csv";
+            var csvFile = @"D:\temp\sampledata.csv";
             var cc = new CsvContext();
 
             var csvFileDescription = new CsvFileDescription()
